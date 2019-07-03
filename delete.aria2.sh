@@ -10,6 +10,9 @@ filepath=$3
 rdp=${filepath#${downloadpath}/}
 path=${downloadpath}/${rdp%%/*}
 
+#添加日志输出功能
+echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/completed.log
+
 if [ $2 -eq 0 ]
 	then
 		exit 0
