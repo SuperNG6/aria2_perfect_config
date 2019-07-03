@@ -4,7 +4,7 @@
 #Author: P3TERX
 #Blog: https://p3terx.com
 
-downloadpath='/root/Download' #Aria2下载目录
+downloadpath='/mnt/Elements/Seagate/aria2' #Aria2下载目录
 
 filepath=$3
 rdp=${filepath#${downloadpath}/}
