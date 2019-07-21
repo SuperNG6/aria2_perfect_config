@@ -1,10 +1,4 @@
 #!/bin/bash
-#Description: Delete files after Aria2 download error
-#Version: 1.2
-#Author: P3TERX
-#Blog: https://p3terx.com
-
-echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/aria2_erro.log
 
 downloadpath='/mnt/Elements/Seagate/aria2' 
 
@@ -32,3 +26,5 @@ elif [ "$path" != "$filepath" ] && [ -e "$path".aria2 ]
 	rm -vrf "$path"
 	exit 0
 fi
+
+echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/aria2_erro.log
