@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/completed.log
-
 downloadpath='/mnt/Elements/Seagate/aria2' 
 
 filepath=$3
@@ -25,3 +23,5 @@ elif [ "$path" != "$filepath" ] && [ -e "$path".aria2 ]
 	rm -vf "$path".aria2
 	exit 0
 fi
+
+echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/completed.log
