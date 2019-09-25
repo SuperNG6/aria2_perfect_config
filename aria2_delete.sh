@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /mnt/swap/aria2_erro.log
+echo $(date '+%Y年%x %X') 	文件数量:$2 	文件:$3 >> /config/aria2_erro.log
 
-downloadpath='/mnt/Elements/Seagate/aria2' 
+downloadpath='/downloads' 
 
 filepath=$3
 rdp=${filepath#${downloadpath}/}
